@@ -14,6 +14,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationComponent } from './components/education/education.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { HardwareComponent } from './components/hardware/hardware.component';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import { HardwareComponent } from './components/hardware/hardware.component';
     ProjectsComponent,
     EducationComponent,
     QuestionsComponent,
-    HardwareComponent
+    HardwareComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MatTooltipModule,
-    MatExpansionModule
+    MatExpansionModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
